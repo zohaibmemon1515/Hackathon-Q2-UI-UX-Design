@@ -3,7 +3,7 @@ import Image from "next/image";
 const FeatureBlog = () => {
   return (
     <>
-      <div className="container mx-auto p-4">
+      <div className="container mx-auto p-4 max-w-7xl">
         <div className="text-center mb-8 py-10">
           <h2 className="text-blue-500 text-sm font-medium">Practice Advice</h2>
           <h1 className="text-4xl font-bold">Featured Posts</h1>
