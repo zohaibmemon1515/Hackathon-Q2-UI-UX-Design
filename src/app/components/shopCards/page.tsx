@@ -9,7 +9,7 @@ function ShopCard() {
       />
       <div className="container mx-auto max-w-7xl mt-8">
         <h1 className="text-2xl font-bold text-[#252B42] text-center">
-          EDITOR'S PICK
+          EDITOR&apos;S PICK
         </h1>
         <p className="text-gray-500 mb-8 mt-2 text-center text-base lg:mx-0 md">
           Problems trying to resolve the conflict between
