@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 function ShopCard() {
   return (
@@ -16,58 +17,66 @@ function ShopCard() {
         </p>
 
         <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 gap-8 container max-w-7xl mt-16 mb-16">
-          <div className="relative h-[500px] w-full">
-            <Image
-              alt="Man wearing a brown jacket"
-              className="object-cover w-full h-full"
-              src="https://storage.googleapis.com/a1aa/image/mW2wJLMH0aoMDR0RVCMQEP0o1VaQ4ARd6G3Lok8kMhNhINeJA.jpg"
-              width={510}
-              height={500}
-            />
-            <div className="absolute bottom-4 left-[31px] bg-white px-10 py-3">
-              <span className="text-[#252B42] font-bold">MEN</span>
+          <Link href="/components/oneProductPage">
+            <div className="relative h-[500px] w-full">
+              <Image
+                alt="Man wearing a brown jacket"
+                className="object-cover w-full h-full"
+                src="https://storage.googleapis.com/a1aa/image/mW2wJLMH0aoMDR0RVCMQEP0o1VaQ4ARd6G3Lok8kMhNhINeJA.jpg"
+                width={510}
+                height={500}
+              />
+              <div className="absolute bottom-4 left-[31px] bg-white px-10 py-3">
+                <span className="text-[#252B42] font-bold">MEN</span>
+              </div>
             </div>
-          </div>
+          </Link>
 
-          <div className="relative h-[500px] w-full">
-            <Image
-              alt="Woman wearing a gray sweater"
-              className="object-cover w-full h-full"
-              src="https://storage.googleapis.com/a1aa/image/12qFzy5eVj11daxOChpbrAReJqafI1IbJQQp2i9fvxaJISjPB.jpg"
-              width={240}
-              height={500}
-            />
-            <div className="absolute bottom-4 left-[48px] bg-white px-10 py-3">
-              <span className="text-[#252B42] font-bold">WOMEN</span>
+          <Link href="/components/oneProductPage">
+            <div className="relative h-[500px] w-full">
+              <Image
+                alt="Woman wearing a gray sweater"
+                className="object-cover w-full h-full"
+                src="https://storage.googleapis.com/a1aa/image/12qFzy5eVj11daxOChpbrAReJqafI1IbJQQp2i9fvxaJISjPB.jpg"
+                width={240}
+                height={500}
+              />
+              <div className="absolute bottom-4 left-[48px] bg-white px-10 py-3">
+                <span className="text-[#252B42] font-bold">WOMEN</span>
+              </div>
             </div>
-          </div>
+          </Link>
 
           <div className="flex flex-col gap-4">
-            <div className="relative h-[242px] w-full">
-              <Image
-                alt="Person wearing a beige cardigan"
-                className="object-cover w-full h-full"
-                src="https://storage.googleapis.com/a1aa/image/Dk71AUVeaA17MS6ywg063nci1eMzQEszedeqdUdMo15CISjPB.jpg"
-                width={240}
-                height={242}
-              />
-              <div className="absolute bottom-4 left-[26px] bg-white px-10 py-3">
-                <span className="text-[#252B42] font-bold">ACCESSORIES</span>
+            <Link href="/components/oneProductPage">
+              <div className="relative h-[242px] w-full">
+                <Image
+                  alt="Person wearing a beige cardigan"
+                  className="object-cover w-full h-full"
+                  src="https://storage.googleapis.com/a1aa/image/Dk71AUVeaA17MS6ywg063nci1eMzQEszedeqdUdMo15CISjPB.jpg"
+                  width={240}
+                  height={242}
+                />
+                <div className="absolute bottom-4 left-[26px] bg-white px-10 py-3">
+                  <span className="text-[#252B42] font-bold">ACCESSORIES</span>
+                </div>
               </div>
-            </div>
+            </Link>
 
-            <div className="relative h-[242px] w-full">
-              <Image
-                alt="Person wearing a yellow shirt with patterns"
-                className="object-cover w-full h-full"
-                src="https://storage.googleapis.com/a1aa/image/1ADSwJbQTiL3KVFYoDLaqHtlaqYUZjh4AzwaN1H0d5UhINeJA.jpg"
-                width={240}
-                height={242}
-              />
-              <div className="absolute bottom-4 left-[40px] bg-white px-10 py-3">
-                <span className="text-[#252B42] font-bold">KIDS</span>
+            <Link href="/components/oneProductPage">
+              <div className="relative h-[242px] w-full">
+                <Image
+                  alt="Person wearing a yellow shirt with patterns"
+                  className="object-cover w-full h-full"
+                  src="https://storage.googleapis.com/a1aa/image/1ADSwJbQTiL3KVFYoDLaqHtlaqYUZjh4AzwaN1H0d5UhINeJA.jpg"
+                  width={240}
+                  height={242}
+                />
+                <div className="absolute bottom-4 left-[40px] bg-white px-10 py-3">
+                  <span className="text-[#252B42] font-bold">KIDS</span>
+                </div>
               </div>
-            </div>
+            </Link>
           </div>
         </div>
       </div>

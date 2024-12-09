@@ -1,9 +1,9 @@
 import Image from "next/image";
+import Link from "next/link";
 
 const Carousel2 = (): JSX.Element => {
   return (
     <>
-      
       <div className="h-[707px] bg-white hidden lg:block">
         <div className="container flex flex-col lg:flex-row items-center justify-center p-4 h-full max-w-7xl">
           <div className="lg:w-1/2">
@@ -26,9 +26,11 @@ const Carousel2 = (): JSX.Element => {
               We know how large objects will act, but things on a small scale.
             </p>
             <div className="mt-6 flex justify-center lg:justify-start">
-              <button className="bg-[#2DC071] text-white font-bold py-2 px-4 rounded mr-2">
-                Buy Now
-              </button>
+              <Link href="/components/ProductList">
+                <button className="bg-[#2DC071] text-white font-bold py-2 px-4 rounded mr-2">
+                  Buy Now
+                </button>
+              </Link>
               <button className="bg-transparent text-[#2DC071] font-bold py-2 px-4 rounded border border-[#2DC071]">
                 Read More
               </button>
@@ -37,7 +39,6 @@ const Carousel2 = (): JSX.Element => {
         </div>
       </div>
 
-    
       <div className="min-h-screen bg-white block lg:hidden mt-8">
         <div className="container flex flex-col items-center justify-center p-4">
           <div className="text-center mt-16">

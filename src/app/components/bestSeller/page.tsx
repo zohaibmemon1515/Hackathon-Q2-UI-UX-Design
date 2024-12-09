@@ -67,47 +67,15 @@ const products = [
     oldPrice: "$75.00",
     newPrice: "$55.00",
   },
-  {
-    id: 9,
-    img: "/assets/img/product9.jpg",
-    title: "Men's Casual Shirt",
-    department: "Men's Clothing",
-    oldPrice: "$45.00",
-    newPrice: "$30.00",
-  },
-  {
-    id: 10,
-    img: "/assets/img/product10.jpg",
-    title: "Wireless Bluetooth Earbuds",
-    department: "Electronics",
-    oldPrice: "$120.00",
-    newPrice: "$85.00",
-  },
-  {
-    id: 11,
-    img: "/assets/img/product11.jpg",
-    title: "Stainless Steel Watch",
-    department: "Accessories",
-    oldPrice: "$200.00",
-    newPrice: "$150.00",
-  },
-  {
-    id: 12,
-    img: "/assets/img/product12.jpg",
-    title: "Women's Handbag",
-    department: "Women's Accessories",
-    oldPrice: "$90.00",
-    newPrice: "$65.00",
-  },
 ];
 const ProductCard = () => {
   return (
-    <div className="flex flex-wrap justify-center xl:gap-[5em] lg:gap-[0.8rem] md:gap-[0.6rem] gap-[2rem] mx-auto container max-w-7xl">
+    <div className="flex flex-wrap justify-center gap-8 mx-auto container pt-10">
       {products.map((product) => (
         <div
           key={product.id}
-          className="text-center shadow-lg border border-gray-200 rounded-lg"
-          style={{ width: "238px", height: "615px" }}
+          className="text-start shadow-lg border border-gray-200 rounded-lg p-4 sm:w-full md:w-1/2 lg:w-1/4 xl:w-1/5"
+          style={{ height: "450px" }}
         >
           <Link href="/components/oneProductPage">
             <div className="relative w-full h-2/3 mb-4">
@@ -116,25 +84,22 @@ const ProductCard = () => {
                 alt={`Product ${product.title}`}
                 layout="fill"
                 objectFit="cover"
-                className="rounded-base"
+                className="rounded-lg"
               />
             </div>
-            <h3 className="font-bold text-lg mb-2">{product.title}</h3>
-            <p className="text-gray-500 text-sm mb-2">{product.department}</p>
-            <div className="flex justify-center items-center gap-1">
+            <h3 className="font-bold text-lg mb-2 pl-2 mt-6">
+              {product.title}
+            </h3>
+            <p className="text-gray-500 text-sm mb-2 pl-2 mt-3">
+              {product.department}
+            </p>
+            <div className="flex items-center gap-2 pl-2 mt-3">
               <p className="text-gray-500 text-sm line-through">
                 {product.oldPrice}
               </p>
               <p className="text-green-600 text-base font-bold">
                 {product.newPrice}
               </p>
-            </div>
-            <div className="flex justify-center space-x-2 mt-4">
-              <span className="w-4 h-4 bg-blue-500 rounded-full inline-block"></span>
-              <span className="w-4 h-4 bg-green-500 rounded-full inline-block"></span>
-              <span className="w-4 h-4 bg-red-500 rounded-full inline-block"></span>
-              <span className="w-4 h-4 bg-yellow-500 rounded-full inline-block"></span>
-              <span className="w-4 h-4 bg-gray-500 rounded-full inline-block"></span>
             </div>
           </Link>
         </div>
@@ -143,4 +108,22 @@ const ProductCard = () => {
   );
 };
 
-export default ProductCard;
+const BestSeller = (): JSX.Element => {
+  return (
+    <div className="bg-[#FAFAFA] p-6 rounded-lg">
+      <div className="container mx-auto mt-[2.5rem] mb-10 grid justify-start items-center">
+        <div className="flex justify-center md:justify-start items-center pb-10">
+          <h1 className="text-[#252B42] text-2xl text-center md:text-left font-bold ">
+            BESTSELLER PRODUCTS
+          </h1>
+        </div>
+
+        <hr className="border-t border-[#BDBDBD] border-[1px]" />
+
+        <ProductCard />
+      </div>
+    </div>
+  );
+};
+
+export default BestSeller;

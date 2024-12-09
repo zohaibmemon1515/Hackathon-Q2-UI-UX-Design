@@ -4,8 +4,6 @@ const Carousel1 = (): JSX.Element => {
   return (
     <div className="font-sans bg-[#23856D]">
       <div className="container flex flex-col lg:flex-row items-center gap-y-6 max-w-7xl mx-auto h-full">
-        
-       
         <div className="text-center lg:text-left sm:flex sm:flex-col sm:items-center lg:items-start sm:p-12 p-4 md:mt-20 lg:mt-0 mt-24">
           <p className="text-white uppercase tracking-wide text-sm mb-8">
             Summer 2020
@@ -19,7 +17,6 @@ const Carousel1 = (): JSX.Element => {
             we know how objects will act, we know...
           </p>
 
-        
           <div className="flex items-center justify-center lg:justify-start gap-5 mt-8">
             <p className="text-white text-2xl font-bold">$16.48</p>
             <button
@@ -31,15 +28,14 @@ const Carousel1 = (): JSX.Element => {
           </div>
         </div>
 
-       
         <div className="flex items-center justify-center lg:flex lg:ml-10 lg:mt-0">
           <Image
             src="/assets/img/carousel1.png"
             alt="Vita Classic Product"
             className="w-full h-auto object-cover"
-            width={500} 
-            height={500} 
-            priority 
+            width={500}
+            height={500}
+            priority
           />
         </div>
       </div>

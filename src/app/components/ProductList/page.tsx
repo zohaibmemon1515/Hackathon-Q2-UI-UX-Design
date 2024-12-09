@@ -6,6 +6,7 @@ import { FaTh, FaList, FaCaretDown } from "react-icons/fa";
 import ClientRow from "../clientRow/page";
 import Footer from "../Footer/page";
 import Productsall from "../Productsall/page";
+import Link from "next/link";
 
 const ProductList = () => {
   const items = [
@@ -67,17 +68,19 @@ const ProductList = () => {
                 key={index}
                 className="relative w-[240px] h-[230px] mx-auto md:mx-0 md:h-[250px] md:w-full"
               >
-                <Image
-                  src={item.imgSrc}
-                  alt={item.alt}
-                  width={500}
-                  height={500}
-                  className="object-cover w-full h-full"
-                />
-                <div className="absolute inset-0 flex flex-col items-center justify-center bg-black bg-opacity-50 text-white">
-                  <h2 className="text-xl font-bold">{item.title}</h2>
-                  <p>{item.count}</p>
-                </div>
+                <Link href="/components/oneProductPage">
+                  <Image
+                    src={item.imgSrc}
+                    alt={item.alt}
+                    width={500}
+                    height={500}
+                    className="object-cover w-full h-full"
+                  />
+                  <div className="absolute inset-0 flex flex-col items-center justify-center bg-black bg-opacity-50 text-white">
+                    <h2 className="text-xl font-bold">{item.title}</h2>
+                    <p>{item.count}</p>
+                  </div>
+                </Link>
               </div>
             ))}
           </div>

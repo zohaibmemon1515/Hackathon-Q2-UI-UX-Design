@@ -8,7 +8,7 @@ import SideBar1 from "./SideBar1";
 const Navbar3 = (): JSX.Element => {
   return (
     <>
-      <nav className="hidden lg:block bg-[#FFFFFF] w-auto h-[58px]">
+      <nav className="hidden lg:block bg-[#FFFFFF] w-auto h-[100px]">
         <div className="container mx-auto max-w-[80rem] flex justify-between items-center h-full">
           <div className="flex gap-20">
             <h1 className="font-bold text-2xl text-[#252B42]">Bandage</h1>
@@ -18,7 +18,7 @@ const Navbar3 = (): JSX.Element => {
                 <Link href="/">Home</Link>
               </li>
               <li className="hover:text-[#252B42] flex items-center gap-1.5">
-                <Link href="/Shop">Shop</Link>
+                <Link href="/components/ProductList">Shop</Link>
                 <IoChevronDown size={18} />
               </li>
               <li className="hover:text-[#252B42]">

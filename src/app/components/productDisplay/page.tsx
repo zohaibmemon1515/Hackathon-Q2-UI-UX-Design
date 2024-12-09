@@ -1,6 +1,6 @@
 import ProductCard from "../ProductCard/page";
 
-const BestSelling = (): JSX.Element => {
+const ProductDisplay = (): JSX.Element => {
   return (
     <div className="mx-auto max-w-7xl mt-[2.5rem] mb-10 flex flex-col items-center">
       <div className="text-center mb-8">
@@ -19,4 +19,4 @@ const BestSelling = (): JSX.Element => {
   );
 };
 
-export default BestSelling;
+export default ProductDisplay;
