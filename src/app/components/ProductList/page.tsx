@@ -108,12 +108,15 @@ const ProductList = () => {
         </div>
       </div>
       <div className="hidden lg:block">
-      <ClientRow/>
-      <Footer/>
+        <ClientRow />
+        <Footer />
       </div>
-      <Productsall/>
+      <Productsall />
+      <div className="block lg:hidden">
+        <ClientRow />
+        <Footer />
+      </div>
     </>
-   
   );
 };
 

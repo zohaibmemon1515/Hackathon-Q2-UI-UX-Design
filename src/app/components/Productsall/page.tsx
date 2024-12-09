@@ -30,12 +30,6 @@ const Productsall = (): JSX.Element => {
           Next
         </button>
       </div>
-
-      
-      <div className="block lg:hidden mt-10">
-        <ClientRow />
-        <Footer />
-      </div>
     </div>
   );
 };
