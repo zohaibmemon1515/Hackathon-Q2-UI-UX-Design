@@ -2,6 +2,7 @@ import TopBarGreen from "../topBar/TopBarGreen";
 import Navbar3 from "../Navbar/Navbar3";
 import { FaChevronRight } from "react-icons/fa6";
 import Image from "next/image";
+import { FaTh, FaList, FaCaretDown } from "react-icons/fa";
 
 const ProductList = () => {
   const items = [
@@ -61,7 +62,7 @@ const ProductList = () => {
             {items.map((item, index) => (
               <div
                 key={index}
-                className="relative w-[400px] h-[350px] mx-auto md:mx-0 md:h-[250px] md:w-full"
+                className="relative w-[240px] h-[230px] mx-auto md:mx-0 md:h-[250px] md:w-full"
               >
                 <Image
                   src={item.imgSrc}
@@ -77,6 +78,34 @@ const ProductList = () => {
               </div>
             ))}
           </div>
+        </div>
+      </div>
+
+      <div className="flex flex-wrap items-center justify-between p-10 container">
+        {/* Left Section */}
+        <div className="text-gray-500 font-semibold w-full sm:w-auto text-center sm:text-left">
+          Showing all 12 results
+        </div>
+
+        {/* Center Section: Views */}
+        <div className="flex items-center space-x-2 mx-auto w-full sm:w-auto mt-4 sm:mt-0 justify-center">
+          <span className="text-gray-500 font-semibold">Views:</span>
+          <button className="p-2 border rounded">
+            <FaTh className="text-blue-900" />
+          </button>
+          <button className="p-2 border rounded">
+            <FaList className="text-gray-600" />
+          </button>
+        </div>
+
+        {/* Right Section: Filter and Sort */}
+        <div className="flex items-center space-x-4 w-full sm:w-auto mt-4 sm:mt-0 justify-center sm:justify-start">
+          <button className="p-2 px-6 bg-gray-100 font-light border rounded text-gray-600 flex items-center">
+            Popularity <FaCaretDown className="ml-1" />
+          </button>
+          <button className="p-2 px-5 bg-blue-500 font-semibold text-white rounded">
+            Filter
+          </button>
         </div>
       </div>
     </>
