@@ -15,7 +15,7 @@ function ShopCard() {
           Problems trying to resolve the conflict between
         </p>
 
-        <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 gap-8 container max-w-7xl">
+        <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 gap-8 container max-w-7xl mt-16 mb-16">
           <div className="relative h-[500px] w-full">
             <Image
               alt="Man wearing a brown jacket"

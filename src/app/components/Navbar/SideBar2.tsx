@@ -45,7 +45,7 @@ const SideBar2 = (): JSX.Element => {
               <Link href="/">Home</Link>
             </li>
             <li className="hover:text-[#252B42]">
-              <Link href="/Product">Product</Link>
+              <Link href="/components/ProductList">Product</Link>
             </li>
             <li className="hover:text-[#252B42]">
               <Link href="/Pricing">Pricing</Link>

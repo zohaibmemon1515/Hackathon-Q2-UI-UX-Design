@@ -8,7 +8,7 @@ import { FaTwitter } from "react-icons/fa";
 const TopBarGreen = (): JSX.Element => {
   return (
     <header className="hidden lg:block bg-[#23856D] w-auto h-[4rem]">
-      <div className="container max-w-[80rem] mx-auto px-10 flex justify-between items-center text-white h-full">
+      <div className="container max-w-[80rem] mx-auto flex justify-between items-center text-white h-full">
         <div className="flex gap-5">
           <div className="flex items-center justify-center gap-1">
             <IoCallOutline size={20} />

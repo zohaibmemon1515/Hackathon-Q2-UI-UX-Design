@@ -3,30 +3,34 @@ import Link from "next/link";
 
 const Footer = () => {
   return (
-    <div className="bg-white">
-      <footer className="body-font bg-[#FAFAFA]">
-        <div className="container py-8 mx-auto max-w-7xl flex lg:items-center lg:flex-row flex-col justify-between items-center">
-          <Link href="/" passHref>
-            <span className="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
-              <span className="ml-0 md:ml-3 text-xl font-bold">Bandage</span>
-            </span>
-          </Link>
-
-          <div className="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
-            <Link href="https://www.facebook.com" passHref>
-              <FaFacebook size={20} className="text-[#23A6F0] mx-2" />
+    
+    
+      <div className="bg-white">
+        <footer className="body-font bg-[#FAFAFA]">
+          <div className="container py-8 mx-auto max-w-7xl flex flex-col lg:flex-row lg:items-center justify-between">
+           
+            <Link href="/" passHref>
+              <span className="flex title-font font-medium items-center text-gray-900 justify-start lg:justify-start">
+                <span className="ml-3 md:ml-3 text-xl font-bold">Bandage</span>
+              </span>
             </Link>
-            <Link href="https://www.instagram.com" passHref>
-              <FaInstagram size={20} className="text-[#23A6F0] mx-2" />
-            </Link>
-            <Link href="https://www.twitter.com" passHref>
-              <FaTwitter size={20} className="text-[#23A6F0] mx-2" />
-            </Link>
+  
+           
+            <div className="flex mt-4 lg:mt-0 sm:justify-start lg:justify-end items-center">
+              <Link href="https://www.facebook.com" passHref>
+                <FaFacebook size={20} className="text-[#23A6F0] mx-2" />
+              </Link>
+              <Link href="https://www.instagram.com" passHref>
+                <FaInstagram size={20} className="text-[#23A6F0] mx-2" />
+              </Link>
+              <Link href="https://www.twitter.com" passHref>
+                <FaTwitter size={20} className="text-[#23A6F0] mx-2" />
+              </Link>
+            </div>
           </div>
-        </div>
 
         <div className="bg-white">
-          <div className="container py-6 flex flex-wrap max-w-7xl">
+          <div className="container pt-10 pb-5 flex flex-wrap max-w-7xl">
             <div className="flex flex-wrap justify-between w-full">
               <div className="lg:w-1/5 md:w-1/2 w-full px-4 mb-6">
                 <h2 className="title-font font-extrabold text-[#252B42] mb-3">
@@ -116,9 +120,9 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="pt-5 bg-[#FAFAFA] border-t border-gray-200">
-          <div className="container max-w-[80rem] text-sm text-[#737373] text-start">
-            <p>Made With Love By Finland All Rights Reserved</p>
+        <div className="bg-[#FAFAFA] border-t border-gray-200">
+          <div className="container max-w-[80rem] text-sm text-[#737373] lg:justify-start items-center justify-center mx-auto flex h-[74px]">
+            <p className="text-center md:text-start">Made With Love By Finland All <br className="block md:hidden" /> Rights Reserved</p>
           </div>
         </div>
       </footer>

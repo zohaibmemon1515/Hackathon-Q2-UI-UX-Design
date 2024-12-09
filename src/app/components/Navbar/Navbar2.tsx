@@ -6,7 +6,7 @@ const Navbar2 = (): JSX.Element => {
   return (
     <>
       <nav className="hidden lg:block bg-[#FFFFFF] w-auto h-[58px]">
-        <div className="container mx-auto px-10 max-w-[80rem] flex justify-between items-center h-full">
+        <div className="container mx-auto max-w-[80rem] flex justify-between items-center h-full">
           <div className="flex gap-20">
             <h1 className="font-bold text-2xl text-[#252B42]">Bandage</h1>
 
@@ -15,7 +15,7 @@ const Navbar2 = (): JSX.Element => {
                 <Link href="/">Home</Link>
               </li>
               <li className="hover:text-[#252B42]">
-                <Link href="/Blog">Product</Link>
+                <Link href="/components/ProductList">Product</Link>
               </li>
               <li className="hover:text-[#252B42]">
                 <Link href="/Contact">Pricing</Link>

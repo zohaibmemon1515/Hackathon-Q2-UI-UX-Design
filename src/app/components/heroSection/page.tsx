@@ -1,30 +1,42 @@
+import Image from "next/image";
+
 export default function Hero() {
-    return (
-      <section
-        className="h-[716px] flex flex-col items-center justify-center text-white md:flex-row md:justify-between md:px-20 bg-cover bg-center relative"
-        style={{
-          backgroundImage: 'url("/assets/img/hero.jpg")',
-        }}
-      >
-       
-        <div className="absolute inset-0 bg-black opacity-50 z-0"></div>
+  return (
+    <div className="font-sans h-full bg-blue-500">
+      <div className="lg:justify-between justify-center flex items-center container gap-y-6 max-w-7xl mx-auto md:h-full h-screen">
         
-        <div className="container max-w-[80rem] mx-auto px-10 flex flex-col md:flex-row items-center justify-between relative z-10">
-       
-          <div className="text-center md:text-left lg:ml-20">
-            <p className="text-sm uppercase mb-12">Summer 2020</p>
-            <h1 className="text-5xl font-bold mt-3">NEW COLLECTION</h1>
-            <p className="mt-5 text-lg font-medium">
-              We know how large objects will act,
-              <br /> but things on a small scale.
-            </p>
-            <button className="mt-7 px-8 py-3 bg-green-500 text-white font-bold rounded hover:bg-green-600">
-              SHOP NOW
-            </button>
-          </div>
+      
+        <div className="text-center md:text-center lg:text-left sm:flex sm:flex-col sm:items-center lg:items-start sm:p-12 p-4">
+          <p className="text-white uppercase tracking-wide text-sm mb-5">
+            Summer 2020
+          </p>
+          <h1 className="text-white xl:text-6xl lg:text-[2.8rem] text-3xl font-bold lg:leading-[56px]">
+            New Collection
+          </h1>
+          <p className="text-white mt-8 text-lg leading-relaxed">
+            We know how large objects will act, <br className="hidden lg:block" />
+            but things on a small scale.
+          </p>
+          <button
+            type="button"
+            className="bg-green-500 mt-8 transition-all text-white font-bold text-lg rounded-md px-6 py-3"
+          >
+            Shop Now
+          </button>
         </div>
-      </section>
-    );
-  }
-  
-  
+
+       
+        <div className="lg:flex items-center justify-center hidden">
+          <Image
+            src="/assets/img/hero1.png"
+            alt="Model with shopping bags"
+            className="w-full h-auto object-contain"
+            width={720} 
+            height={560} 
+            priority 
+          />
+        </div>
+      </div>
+    </div>
+  );
+}

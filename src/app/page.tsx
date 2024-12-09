@@ -7,12 +7,11 @@ import BestSelling from "./components/bestSelling/page";
 import Carousel1 from "./components/carousel1/page";
 import Carousel2 from "./components/carousel1/Carousel2";
 import FeatureBlog from "./components/featureBlog/page";
-// import ProductList from "./components/ProductList/page";
+ import ProductList from "./components/ProductList/page";
 
 export default function Home() {
   return (
     <>
-      {/* <ProductList /> */}
       <TopBarBlack />
       <Navbar1 />
       <Hero />

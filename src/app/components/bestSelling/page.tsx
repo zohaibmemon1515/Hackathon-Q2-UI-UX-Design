@@ -12,7 +12,7 @@ const BestSelling = (): JSX.Element => {
           Problems trying to resolve the conflict between
         </p>
       </div>
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 md:flex lg:flex lg:flex-wrap lg:justify-center gap-8 gap-y-[80px]">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 lg:flex md:flex gap-8 gap-y-[80px] mt-10 mb-16">
         <ProductCard />
       </div>
     </div>

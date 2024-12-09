@@ -3,6 +3,9 @@ import Navbar3 from "../Navbar/Navbar3";
 import { FaChevronRight } from "react-icons/fa6";
 import Image from "next/image";
 import { FaTh, FaList, FaCaretDown } from "react-icons/fa";
+import ClientRow from "../clientRow/page";
+import Footer from "../Footer/page";
+import Productsall from "../Productsall/page";
 
 const ProductList = () => {
   const items = [
@@ -44,7 +47,7 @@ const ProductList = () => {
       <Navbar3 />
 
       <div className="py-10 px-24 bg-gray-100">
-        <div className="flex flex-col sm:flex-row justify-center sm:justify-between items-center sm:items-start space-y-5 sm:space-y-0">
+        <div className="flex flex-col sm:flex-row container max-w-7xl justify-center sm:justify-between items-center sm:items-start space-y-5 sm:space-y-0">
           <div className="text-4xl font-semibold text-gray-800 text-center sm:text-left">
             Shop
           </div>
@@ -57,7 +60,7 @@ const ProductList = () => {
       </div>
 
       <div className="py-10 bg-gray-100">
-        <div className="container mx-auto">
+        <div className="container mx-auto max-w-7xl">
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
             {items.map((item, index) => (
               <div
@@ -81,13 +84,11 @@ const ProductList = () => {
         </div>
       </div>
 
-      <div className="flex flex-wrap items-center justify-between p-10 container">
-        {/* Left Section */}
+      <div className="flex flex-wrap items-center justify-between p-10 container max-w-7xl">
+        =
         <div className="text-gray-500 font-semibold w-full sm:w-auto text-center sm:text-left">
           Showing all 12 results
         </div>
-
-        {/* Center Section: Views */}
         <div className="flex items-center space-x-2 mx-auto w-full sm:w-auto mt-4 sm:mt-0 justify-center">
           <span className="text-gray-500 font-semibold">Views:</span>
           <button className="p-2 border rounded">
@@ -97,8 +98,6 @@ const ProductList = () => {
             <FaList className="text-gray-600" />
           </button>
         </div>
-
-        {/* Right Section: Filter and Sort */}
         <div className="flex items-center space-x-4 w-full sm:w-auto mt-4 sm:mt-0 justify-center sm:justify-start">
           <button className="p-2 px-6 bg-gray-100 font-light border rounded text-gray-600 flex items-center">
             Popularity <FaCaretDown className="ml-1" />
@@ -108,7 +107,13 @@ const ProductList = () => {
           </button>
         </div>
       </div>
+      <div className="hidden lg:block">
+      <ClientRow/>
+      <Footer/>
+      </div>
+      <Productsall/>
     </>
+   
   );
 };
 
