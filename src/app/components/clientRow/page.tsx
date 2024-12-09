@@ -16,7 +16,7 @@ const ClientRow = (): JSX.Element => {
           </div>
           <div className="flex justify-center items-center">
             <Image
-              src="/assets/img/Log2.png"
+              src="/assets/img/log2.png"
               alt="logo"
               width={100}
               height={50}
@@ -34,7 +34,7 @@ const ClientRow = (): JSX.Element => {
           </div>
           <div className="flex justify-center items-center">
             <Image
-              src="/assets/img/Log4.png"
+              src="/assets/img/log4.png"
               alt="logo"
               width={100}
               height={50}
@@ -43,7 +43,7 @@ const ClientRow = (): JSX.Element => {
           </div>
           <div className="flex justify-center items-center">
             <Image
-              src="/assets/img/Log5.png"
+              src="/assets/img/log5.png"
               alt="logo"
               width={100}
               height={50}
@@ -52,7 +52,7 @@ const ClientRow = (): JSX.Element => {
           </div>
           <div className="flex justify-center items-center">
             <Image
-              src="/assets/img/Log6.png"
+              src="/assets/img/log6.png"
               alt="logo"
               width={100}
               height={50}
