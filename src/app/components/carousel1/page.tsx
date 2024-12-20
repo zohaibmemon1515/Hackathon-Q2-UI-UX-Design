@@ -1,41 +1,42 @@
 import Image from "next/image";
+import Link from "next/link";
 
 const Carousel1 = (): JSX.Element => {
   return (
-    <div className="font-sans bg-[#23856D]">
-      <div className="container flex flex-col lg:flex-row items-center gap-y-6 max-w-7xl mx-auto h-full">
-        <div className="text-center lg:text-left sm:flex sm:flex-col sm:items-center lg:items-start sm:p-12 p-4 md:mt-20 lg:mt-0 mt-24">
-          <p className="text-white uppercase tracking-wide text-sm mb-8">
-            Summer 2020
+    <div className="font-sans h-full bg-gradient-to-br from-[#1C6E5E] to-[#23856D] pt-10">
+      <div className="lg:justify-between flex flex-col lg:flex-row items-center gap-y-6 lg:h-full h-full container max-w-4xl">
+        <div className="text-center md:text-center lg:text-left flex flex-col items-center lg:items-start md:w-[25rem] lg:mt-0 mt-24">
+          <p className="text-white uppercase tracking-wide text-sm mb-7 lg:text-lg">
+            Limited Summer Edition
           </p>
-          <h1 className="text-white xl:text-6xl lg:text-[2.8rem] text-5xl font-bold lg:leading-[56px]">
-            Vita Classic <br className="block lg:hidden" /> Product
+          <h1 className="text-white lg:text-4xl text-3xl font-bold lg:leading-[40px]">
+            Vita Classic Premium Collection
           </h1>
-          <p className="text-white mt-8 md:text-xl leading-relaxed text-lg">
-            We know how large objects will act,{" "}
-            <br className="hidden lg:block" />
-            we know how objects will act, we know...
+          <p className="text-white mt-7 text-base lg:text-lg leading-relaxed">
+            Elevate your lifestyle with timeless elegance Crafted for those who
+            demand the best.
           </p>
-
-          <div className="flex items-center justify-center lg:justify-start gap-5 mt-8">
-            <p className="text-white text-2xl font-bold">$16.48</p>
-            <button
-              type="button"
-              className="bg-[#2DC071] transition-all text-white font-bold text-xl rounded-md px-6 py-3"
-            >
-              Add to Cart
-            </button>
+          <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-5 mt-8">
+            <p className="text-white text-3xl font-bold">$16.48</p>
+            <Link href="/components/ProductList">
+              <button
+                type="button"
+                className="bg-[#2DC071] hover:bg-[#259D63] transition-all text-white font-bold text-lg rounded-md px-4 py-2"
+              >
+                Add to Cart
+              </button>
+            </Link>
           </div>
         </div>
 
-        <div className="flex items-center justify-center lg:flex lg:ml-10 lg:mt-0">
+        <div className="flex items-center justify-center mt-24 lg:mt-0">
           <Image
             src="/assets/img/carousel1.png"
-            alt="Vita Classic Product"
-            className="w-full h-auto object-cover"
-            width={500}
-            height={500}
-            priority
+            alt="Stylish model showcasing products"
+            className="w-full h-[380px] md:h-[450px] lg:h-[450px] object-cover"
+            width={720}
+            height={560}
+            quality={100}
           />
         </div>
       </div>

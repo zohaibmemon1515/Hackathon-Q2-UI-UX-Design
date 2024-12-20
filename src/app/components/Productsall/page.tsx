@@ -4,7 +4,7 @@ import Footer from "../Footer/page";
 
 const Productsall = (): JSX.Element => {
   return (
-    <div className="mx-auto max-w-7xl mt-[4rem] mb-14 flex flex-col items-center">
+    <div className=" container max-w-4xl mt-[4rem] mb-14 flex flex-col items-center">
     
       <div className="flex flex-wrap justify-center gap-x-8 gap-y-[5.5rem]">
       

@@ -55,7 +55,7 @@ const products = [
     id: 7,
     img: "/assets/img/product7.jpg",
     title: "Men's Sports Jacket",
-    department: "Men's Clothing",
+    department: "Men's Sport",
     oldPrice: "$110.00",
     newPrice: "$80.00",
   },
@@ -78,7 +78,7 @@ const products = [
   {
     id: 10,
     img: "/assets/img/product10.jpg",
-    title: "Wireless Bluetooth Earbuds",
+    title: "Bluetooth Earbuds",
     department: "Electronics",
     oldPrice: "$120.00",
     newPrice: "$85.00",
@@ -87,7 +87,7 @@ const products = [
     id: 11,
     img: "/assets/img/product11.jpg",
     title: "Stainless Steel Watch",
-    department: "Accessories",
+    department: "Watch",
     oldPrice: "$200.00",
     newPrice: "$150.00",
   },
@@ -95,41 +95,52 @@ const products = [
     id: 12,
     img: "/assets/img/product12.jpg",
     title: "Women's Handbag",
-    department: "Women's Accessories",
+    department: "Hand Bag's",
     oldPrice: "$90.00",
     newPrice: "$65.00",
   },
 ];
 const ProductCard = () => {
   return (
-    <div className="flex flex-wrap justify-center xl:gap-[5em] lg:gap-[0.8rem] md:gap-[0.6rem] gap-[2rem] mx-auto container max-w-7xl">
+    <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-4 lg:gap-2 md:gap-[1.7rem] gap-10">
       {products.map((product) => (
         <div
           key={product.id}
-          className="text-center shadow-lg border border-gray-200 rounded-lg"
-          style={{ width: "238px", height: "615px" }}
+          className="relative group h-[36rem] w-full overflow-hidden rounded-xl shadow-lg border border-gray-300 transition-transform duration-300 hover:scale-105 hover:shadow-xl"
         >
           <Link href="/components/oneProductPage">
-            <div className="relative w-full h-2/3 mb-4">
+            <div className="relative h-2/3 w-full overflow-hidden group">
               <Image
                 src={product.img}
                 alt={`Product ${product.title}`}
                 layout="fill"
                 objectFit="cover"
-                className="rounded-base"
+                className="object-cover w-full h-full rounded-lg transition-transform duration-300 group-hover:scale-110"
+                quality={100}
               />
+
+              <div className="absolute inset-0">
+                <div className="absolute top-0 w-full h-1/3 bg-gradient-to-b from-black/60 to-transparent pointer-events-none"></div>
+                <div className="absolute bottom-0 w-full h-1/3 bg-gradient-to-t from-black/60 to-transparent pointer-events-none"></div>
+              </div>
             </div>
-            <h3 className="font-bold text-lg mb-2">{product.title}</h3>
-            <p className="text-gray-500 text-sm mb-2">{product.department}</p>
-            <div className="flex justify-center items-center gap-1">
-              <p className="text-gray-500 text-sm line-through">
-                {product.oldPrice}
-              </p>
-              <p className="text-green-600 text-base font-bold">
-                {product.newPrice}
-              </p>
+
+            <div className="p-4 mt-5">
+              <h3 className="font-semibold text-base text-gray-900">
+                {product.title}
+              </h3>
+              <p className="text-gray-500 text-sm mb-1 mt-2">{product.department}</p>
+              <div className="flex gap-5 items-center">
+                <p className="text-green-600 text-lg font-bold">
+                  {product.newPrice}
+                </p>
+                <p className="text-gray-500 text-sm line-through">
+                  {product.oldPrice}
+                </p>
+              </div>
             </div>
-            <div className="flex justify-center space-x-2 mt-4">
+
+            <div className="flex justify-center space-x-2 mt-4 absolute bottom-6 left-4">
               <span className="w-4 h-4 bg-blue-500 rounded-full inline-block"></span>
               <span className="w-4 h-4 bg-green-500 rounded-full inline-block"></span>
               <span className="w-4 h-4 bg-red-500 rounded-full inline-block"></span>

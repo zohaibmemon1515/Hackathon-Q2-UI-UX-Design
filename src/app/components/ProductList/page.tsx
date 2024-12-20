@@ -47,9 +47,9 @@ const ProductList = () => {
       <TopBarGreen />
       <Navbar3 />
 
-      <div className="py-10 px-24 bg-gray-100">
-        <div className="flex flex-col sm:flex-row container max-w-7xl justify-center sm:justify-between items-center sm:items-start space-y-5 sm:space-y-0">
-          <div className="text-4xl font-semibold text-gray-800 text-center sm:text-left">
+      <div className="pt-10 bg-gray-100">
+        <div className="flex flex-col sm:flex-row container max-w-4xl justify-center sm:justify-between items-center sm:items-start space-y-5 sm:space-y-0">
+          <div className="text-3xl font-semibold text-gray-800 text-center sm:text-left">
             Shop
           </div>
           <div className="flex items-center space-x-2 text-gray-400 justify-center sm:justify-end">
@@ -61,8 +61,8 @@ const ProductList = () => {
       </div>
 
       <div className="py-10 bg-gray-100">
-        <div className="container mx-auto max-w-7xl">
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
+        <div className="container max-w-4xl">
+          <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-6">
             {items.map((item, index) => (
               <div
                 key={index}
@@ -87,8 +87,7 @@ const ProductList = () => {
         </div>
       </div>
 
-      <div className="flex flex-wrap items-center justify-between p-10 container max-w-7xl">
-        =
+      <div className="flex flex-wrap items-center justify-between container max-w-4xl">
         <div className="text-gray-500 font-semibold w-full sm:w-auto text-center sm:text-left">
           Showing all 12 results
         </div>

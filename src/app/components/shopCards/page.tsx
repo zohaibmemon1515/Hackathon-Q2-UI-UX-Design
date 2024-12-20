@@ -4,76 +4,72 @@ import Link from "next/link";
 function ShopCard() {
   return (
     <div className="flex flex-col items-center py-10 bg-white">
-      <link
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-        rel="stylesheet"
-      />
-      <div className="container mx-auto max-w-7xl mt-8">
+      <div className="container max-w-4xl">
         <h1 className="text-2xl font-bold text-[#252B42] text-center">
-          EDITOR&apos;S PICK
+          FEATURED PICKS
         </h1>
-        <p className="text-gray-500 mb-8 mt-2 text-center text-base lg:mx-0 md">
-          Problems trying to resolve the conflict between
+        <p className="text-gray-500 mb-8 mt-2 text-center text-base">
+          Handpicked styles curated just for you
         </p>
 
-        <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 gap-8 container max-w-7xl mt-16 mb-16">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-12">
           <Link href="/components/oneProductPage">
-            <div className="relative h-[500px] w-full">
+            <div className="relative group h-[400px] w-full overflow-hidden rounded-lg shadow-md">
               <Image
-                alt="Man wearing a brown jacket"
-                className="object-cover w-full h-full"
+                alt="Man showcasing a classic brown jacket"
+                className="object-cover w-full h-full transition-transform duration-300 group-hover:scale-105"
                 src="https://storage.googleapis.com/a1aa/image/mW2wJLMH0aoMDR0RVCMQEP0o1VaQ4ARd6G3Lok8kMhNhINeJA.jpg"
                 width={510}
-                height={500}
+                height={400}
               />
-              <div className="absolute bottom-4 left-[31px] bg-white px-10 py-3">
-                <span className="text-[#252B42] font-bold">MEN</span>
+              <div className="absolute bottom-4 left-4 bg-white px-6 py-2 rounded shadow">
+                <span className="text-[#252B42] font-bold">FOR HIM</span>
               </div>
             </div>
           </Link>
 
           <Link href="/components/oneProductPage">
-            <div className="relative h-[500px] w-full">
+            <div className="relative group h-[400px] w-full overflow-hidden rounded-lg shadow-md">
               <Image
-                alt="Woman wearing a gray sweater"
-                className="object-cover w-full h-full"
+                alt="Woman styled in a cozy gray sweater"
+                className="object-cover w-full h-full transition-transform duration-300 group-hover:scale-105"
                 src="https://storage.googleapis.com/a1aa/image/12qFzy5eVj11daxOChpbrAReJqafI1IbJQQp2i9fvxaJISjPB.jpg"
-                width={240}
-                height={500}
+                width={510}
+                height={400}
               />
-              <div className="absolute bottom-4 left-[48px] bg-white px-10 py-3">
-                <span className="text-[#252B42] font-bold">WOMEN</span>
+              <div className="absolute bottom-4 left-4 bg-white px-6 py-2 rounded shadow">
+                <span className="text-[#252B42] font-bold">FOR HER</span>
               </div>
             </div>
           </Link>
 
           <div className="flex flex-col gap-4">
             <Link href="/components/oneProductPage">
-              <div className="relative h-[242px] w-full">
+              <div className="relative group h-[190px] w-full overflow-hidden rounded-lg shadow-md">
                 <Image
-                  alt="Person wearing a beige cardigan"
-                  className="object-cover w-full h-full"
+                  alt="Stylish accessories to complete your look"
+                  className="object-cover w-full h-full transition-transform duration-300 group-hover:scale-105"
                   src="https://storage.googleapis.com/a1aa/image/Dk71AUVeaA17MS6ywg063nci1eMzQEszedeqdUdMo15CISjPB.jpg"
-                  width={240}
-                  height={242}
+                  width={510}
+                  height={190}
                 />
-                <div className="absolute bottom-4 left-[26px] bg-white px-10 py-3">
+                <div className="absolute bottom-4 left-4 bg-white px-6 py-2 rounded shadow">
                   <span className="text-[#252B42] font-bold">ACCESSORIES</span>
                 </div>
               </div>
             </Link>
 
             <Link href="/components/oneProductPage">
-              <div className="relative h-[242px] w-full">
+              <div className="relative group h-[190px] w-full overflow-hidden rounded-lg shadow-md">
                 <Image
-                  alt="Person wearing a yellow shirt with patterns"
-                  className="object-cover w-full h-full"
+                  alt="Bright and fun fashion for kids"
+                  className="object-cover w-full h-full transition-transform duration-300 group-hover:scale-105"
                   src="https://storage.googleapis.com/a1aa/image/1ADSwJbQTiL3KVFYoDLaqHtlaqYUZjh4AzwaN1H0d5UhINeJA.jpg"
-                  width={240}
-                  height={242}
+                  width={510}
+                  height={190}
                 />
-                <div className="absolute bottom-4 left-[40px] bg-white px-10 py-3">
-                  <span className="text-[#252B42] font-bold">KIDS</span>
+                <div className="absolute bottom-4 left-4 bg-white px-6 py-2 rounded shadow">
+                  <span className="text-[#252B42] font-bold">FOR KIDS</span>
                 </div>
               </div>
             </Link>

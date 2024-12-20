@@ -24,8 +24,8 @@ const OneProductPage = () => {
       <TopBarGreen />
       <Navbar3 />
 
-      <div className="py-10 px-24 bg-gray-100">
-        <div className="flex flex-col sm:flex-row container max-w-7xl justify-start items-center sm:items-start space-y-5 sm:space-y-0">
+      <div className="py-10 bg-gray-100">
+        <div className="flex flex-col sm:flex-row container max-w-4xl justify-start items-center sm:items-start space-y-5 sm:space-y-0">
           <div className="flex items-center space-x-2 text-gray-400 justify-start ">
             <span className="font-semibold text-gray-800">Home</span>
             <FaChevronRight />
@@ -34,7 +34,7 @@ const OneProductPage = () => {
         </div>
       </div>
 
-      <div className="flex flex-col md:flex-row max-w-7xl container mx-auto gap-8 mb-16 mt-2">
+      <div className="flex flex-col md:flex-row max-w-4xl container gap-8 mb-16 mt-2">
         <div className="relative w-full md:w-1/2">
           <div className="relative h-[420px] md:h-[500px]">
             <Image

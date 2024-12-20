@@ -3,37 +3,37 @@ import Link from "next/link";
 
 export default function Hero() {
   return (
-    <div className="font-sans h-full bg-blue-500">
-      <div className="lg:justify-between justify-center flex items-center container gap-y-6 max-w-7xl mx-auto md:h-full h-screen">
-        <div className="text-center md:text-center lg:text-left sm:flex sm:flex-col sm:items-center lg:items-start sm:p-12 p-4">
-          <p className="text-white uppercase tracking-wide text-sm mb-5">
-            Summer 2020
+    <div className="font-sans h-full bg-blue-500 pt-10">
+      <div className="lg:justify-between justify-center flex items-center gap-y-6 lg:h-full h-screen container max-w-4xl">
+        <div className="text-center md:text-center lg:text-left sm:flex sm:flex-col sm:items-center lg:items-start md:w-[25rem]">
+          <p className="text-white uppercase tracking-wide text-sm mb-7 lg:text-sm font-semibold">
+            Exclusive Launch
           </p>
-          <h1 className="text-white xl:text-6xl lg:text-[2.8rem] text-3xl font-bold lg:leading-[56px]">
-            New Collection
+          <h1 className="text-white lg:text-4xl text-4xl font-bold lg:leading-[32px]">
+            Unveiling the Future
           </h1>
-          <p className="text-white mt-8 text-lg leading-relaxed">
-            We know how large objects will act,{" "}
-            <br className="hidden lg:block" />
-            but things on a small scale.
+          <p className="text-white mt-7 text-base lg:text-base leading-relaxed opacity-80">
+            Experience the essence of style crafted to perfection Lorem ipsum
+            dolor sit amet consectetur adipisicing elit.
           </p>
           <Link href="/components/ProductList">
             <button
               type="button"
-              className="bg-green-500 mt-8 transition-all text-white font-bold text-lg rounded-md px-6 py-3"
+              className="bg-green-500 mt-5 transition-all text-white font-bold text-lg rounded-md px-4 py-2"
             >
-              Shop Now
+              Discover Now
             </button>
           </Link>
         </div>
 
-        <div className="lg:flex items-center justify-center hidden">
+        <div className="lg:flex hidden items-center justify-center">
           <Image
-            src="/assets/img/hero1.png"
-            alt="Model with shopping bags"
-            className="w-full h-auto object-contain"
+            src="/assets/img/aboutus.png"
+            alt="Stylish model showcasing products"
+            className="w-full h-[450px] object-cover"
             width={720}
             height={560}
+            quality={100}
             priority
           />
         </div>

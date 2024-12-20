@@ -3,76 +3,50 @@ import Link from "next/link";
 
 const Carousel2 = (): JSX.Element => {
   return (
-    <>
-      <div className="h-[707px] bg-white hidden lg:block">
-        <div className="container flex flex-col lg:flex-row items-center justify-center p-4 h-full max-w-7xl">
-          <div className="lg:w-1/2">
-            <Image
-              src="/assets/img/manMaflar.png"
-              alt="A happy couple wrapped in a red and black checkered scarf"
-              className="w-full h-auto"
-              width={500}
-              height={500}
-            />
-          </div>
-          <div className="lg:w-1/2 text-center lg:text-left mt-4 lg:mt-0 lg:ml-8">
-            <p className="text-gray-500 uppercase tracking-wide text-sm">
-              Summer 2020
-            </p>
-            <h1 className="text-4xl font-bold text-[#252B42] mt-8">
-              Part of the Neural <br /> Universe
-            </h1>
-            <p className="text-gray-600 mt-6 text-xl">
-              We know how large objects will act, but things on a small scale.
-            </p>
-            <div className="mt-6 flex justify-center lg:justify-start">
-              <Link href="/components/ProductList">
-                <button className="bg-[#2DC071] text-white font-bold py-2 px-4 rounded mr-2">
-                  Buy Now
-                </button>
-              </Link>
-              <button className="bg-transparent text-[#2DC071] font-bold py-2 px-4 rounded border border-[#2DC071]">
-                Read More
-              </button>
-            </div>
-          </div>
+    <div className="font-sans h-full bg-gradient-to-br from-white to-[#F7F7F7]">
+      <div className="lg:justify-between justify-center pt-20 md:pt-24 flex flex-col-reverse lg:flex-row items-center lg:h-auto container max-w-4xl gap-8 lg:gap-0 lg:pt-10">
+        <div className="flex items-center justify-center mt-24 lg:mt-0">
+          <Image
+            src="/assets/img/manMaflar.png"
+            alt="Stylish model showcasing products"
+            className="w-full h-[300px] md:h-[450px] lg:h-[450px] object-cover"
+            width={720}
+            height={560}
+            quality={100}
+            priority
+          />
         </div>
-      </div>
 
-      <div className="min-h-screen bg-white block lg:hidden mt-8">
-        <div className="container flex flex-col items-center justify-center p-4">
-          <div className="text-center mt-16">
-            <p className="text-gray-500 uppercase tracking-wide text-sm">
-              Summer 2020
-            </p>
-            <h1 className="text-4xl font-bold text-gray-900 mt-8">
-              Part of the Neural <br /> Universe
-            </h1>
-            <p className="text-gray-600 mt-6">
-              We know how large objects will act, but things on a small scale.
-            </p>
-            <div className="mt-6 flex justify-center">
-              <button className="bg-[#23A6F0] text-white font-bold py-2 px-4 rounded mr-2">
+        <div className="text-center md:text-center lg:text-left sm:flex sm:flex-col sm:items-center lg:items-start md:w-[25rem] mt-20 lg:mt-0">
+          <p className="text-gray-500 uppercase tracking-wide text-sm mb-7 lg:text-lg">
+            Summer 2024 Collection
+          </p>
+          <h1 className="text-[#252B42] text-3xl lg:text-4xl font-extrabold leading-tight">
+            Neural Universe Exclusive Series
+          </h1>
+          <p className="text-gray-600 mt-7 text-base lg:text-lg leading-relaxed">
+            Discover the cutting-edge design inspired by the cosmos. Experience
+            elegance redefined for modern living.
+          </p>
+          <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-5 mt-8">
+            <Link href="/components/ProductList">
+              <button
+                type="button"
+                className="bg-[#2DC071] hover:bg-[#259D63] transition-all text-white font-bold text-lg rounded-md px-4 py-2"
+              >
                 Buy Now
               </button>
-              <button className="bg-transparent text-[#23A6F0] font-bold py-2 px-4 rounded border border-[#23A6F0]">
-                Read More
-              </button>
-            </div>
-          </div>
-
-          <div className="mt-24 mb-10">
-            <Image
-              src="/assets/img/manMaflar.png"
-              alt="A happy couple wrapped in a red and black checkered scarf"
-              className="w-full h-auto object-cover"
-              width={500}
-              height={500}
-            />
+            </Link>
+            <button
+              type="button"
+              className="bg-transparent text-[#2DC071] font-bold text-lg rounded-md px-4 py-2 border border-[#2DC071]"
+            >
+              Read More
+            </button>
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 

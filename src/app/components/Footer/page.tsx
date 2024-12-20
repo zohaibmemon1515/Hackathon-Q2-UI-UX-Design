@@ -7,16 +7,16 @@ const Footer = () => {
     
       <div className="bg-white">
         <footer className="body-font bg-[#FAFAFA]">
-          <div className="container py-8 mx-auto max-w-7xl flex flex-col lg:flex-row lg:items-center justify-between">
+          <div className="container py-8 max-w-4xl flex flex-col md:flex-row lg:items-center justify-between">
            
             <Link href="/" passHref>
-              <span className="flex title-font font-medium items-center text-gray-900 justify-start lg:justify-start">
-                <span className="ml-3 md:ml-3 text-xl font-bold">Bandage</span>
+              <span className="flex title-font font-medium items-center text-gray-900 justify-center md:justify-start">
+                <span className="text-xl font-bold">Bandage</span>
               </span>
             </Link>
   
            
-            <div className="flex mt-4 lg:mt-0 sm:justify-start lg:justify-end items-center">
+            <div className="flex mt-4 lg:mt-0 justify-center md:justify-end items-center">
               <Link href="https://www.facebook.com" passHref>
                 <FaFacebook size={20} className="text-[#23A6F0] mx-2" />
               </Link>
@@ -30,9 +30,9 @@ const Footer = () => {
           </div>
 
         <div className="bg-white">
-          <div className="container pt-10 pb-5 flex flex-wrap max-w-7xl">
-            <div className="flex flex-wrap justify-between w-full">
-              <div className="lg:w-1/5 md:w-1/2 w-full px-4 mb-6">
+          <div className="container pt-10 pb-5 flex flex-wrap max-w-4xl">
+            <div className="flex flex-wrap md:justify-between w-full">
+              <div className="lg:w-1/5 md:w-1/2 w-full mb-6 text-center md:text-start">
                 <h2 className="title-font font-extrabold text-[#252B42] mb-3">
                   Company Info
                 </h2>
@@ -52,7 +52,7 @@ const Footer = () => {
                 </ul>
               </div>
 
-              <div className="lg:w-1/5 md:w-1/2 w-full px-4 mb-6">
+              <div className="lg:w-1/5 md:w-1/2 w-full mb-6 text-center md:text-start">
                 <h2 className="title-font font-extrabold text-[#252B42] mb-3">
                   Legal
                 </h2>
@@ -72,7 +72,7 @@ const Footer = () => {
                 </ul>
               </div>
 
-              <div className="lg:w-1/5 md:w-1/2 w-full px-4 mb-6">
+              <div className="lg:w-1/5 md:w-1/2 w-full mb-6 text-center md:text-start">
                 <h2 className="title-font font-extrabold text-[#252B42] mb-3">
                   Features
                 </h2>
@@ -84,7 +84,7 @@ const Footer = () => {
                 </ul>
               </div>
 
-              <div className="lg:w-1/5 md:w-1/2 w-full px-4 mb-6">
+              <div className="lg:w-1/5 md:w-1/2 w-full mb-6 text-center md:text-start">
                 <h2 className="title-font font-extrabold text-[#252B42] mb-3">
                   Resources
                 </h2>
@@ -96,8 +96,8 @@ const Footer = () => {
                 </ul>
               </div>
 
-              <div className="lg:w-1/5 md:w-1/2 w-full px-4 mb-6">
-                <h2 className="title-font font-extrabold text-[#252B42] mb-3">
+              <div className="lg:w-1/5 md:w-1/2 w-full mb-6 mt-6 ">
+                <h2 className="title-font font-extrabold text-[#252B42] mb-3 text-center md:text-start">
                   Get In Touch
                 </h2>
                 <div className="flex items-center w-full">
@@ -112,8 +112,8 @@ const Footer = () => {
                     Subscribe
                   </button>
                 </div>
-                <p className="text-gray-500 text-sm mt-2">
-                  Lore imp sum dolor Amit
+                <p className="text-gray-500 text-sm mt-2 text-center md:text-start">
+                  We Will Contact You Soon!
                 </p>
               </div>
             </div>
@@ -121,7 +121,7 @@ const Footer = () => {
         </div>
 
         <div className="bg-[#FAFAFA] border-t border-gray-200">
-          <div className="container max-w-[80rem] text-sm text-[#737373] lg:justify-start items-center justify-center mx-auto flex h-[74px]">
+          <div className="container max-w-4xl text-sm text-[#737373] lg:justify-start items-center justify-center mx-auto flex h-[74px]">
             <p className="text-center md:text-start">Made With Love By Finland All <br className="block md:hidden" /> Rights Reserved</p>
           </div>
         </div>
