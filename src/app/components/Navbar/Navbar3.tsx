@@ -28,10 +28,10 @@ const Navbar3 = (): JSX.Element => {
                 <Link href="/Blog">Blog</Link>
               </li>
               <li className="hover:text-[#252B42]">
-                <Link href="/Contact">Contact</Link>
+                <Link href="/components/Contactus">Contact</Link>
               </li>
               <li className="hover:text-[#252B42]">
-                <Link href="/Pages">Pages</Link>
+                <Link href="/components/Pricing">Pages</Link>
               </li>
             </ul>
           </div>
