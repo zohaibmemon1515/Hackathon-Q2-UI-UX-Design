@@ -35,7 +35,7 @@ const FAQ = () => {
 
         <div className="text-center mt-12">
           <p className="text-gray-600">
-            Haven&apost got your answer?{" "}
+            Haven &apos t got your answer?{" "}
             <a href="#" className="text-blue-500 font-semibold">
               Contact our support
             </a>
